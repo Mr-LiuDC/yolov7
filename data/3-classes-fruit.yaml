@@ -1,0 +1,11 @@
+train: ./3-classes-fruit/train/images
+val: ./3-classes-fruit/val/images
+
+# number of classes
+nc: 3
+
+# class names
+names: [ 'apple', 'banana', 'orange' ]
+
+# star training
+# python train.py --workers 4 --device 0 --batch-size 4 --data data/3-classes-fruit.yaml --img 640 640 --cfg cfg/training/3-classes-fruit.yaml --weights 'weights/yolov7_training.pt' --name 3-classes-fruit
