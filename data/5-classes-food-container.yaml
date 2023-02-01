@@ -1,0 +1,11 @@
+train: ./data/5-classes-food-container/2023_train.txt
+val: ./data/5-classes-food-container/2023_val.txt
+
+# number of classes
+nc: 5
+
+# class names
+names: [ "box", "cup", "bowl", "plate", "independent" ]
+
+# star training
+# python train.py --workers 4 --device 0 --batch-size 4 --epochs 20 --data data/5-classes-food-container.yaml --img 640 640 --cfg cfg/training/5-classes-food-container.yaml --weights 'weights/yolov7_training.pt' --name 5-classes-food-container
